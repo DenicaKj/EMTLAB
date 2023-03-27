@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e85af91-b3ab-4ac3-8bba-c174586093fc" name="Changes" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/EmtApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/Author.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/Country.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/DTO/BookDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/enumeration/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/model/exception/NoAvailableCopies.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/repository/AuthorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/repository/CountryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/AuthorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/CountryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/Impl/AuthorServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/Impl/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/emt/service/Impl/CountryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prop.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/emt/EmtApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/emt/repo/DataBaseTest.java" beforeDir="false" />
+    <list default="true" id="1e85af91-b3ab-4ac3-8bba-c174586093fc" name="Changes" comment="rest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +58,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Denica\OneDrive\Documents\GitHub\EMTLab\frontend\src\components\App" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.emt.service" />
     </key>
@@ -146,7 +125,7 @@
       <updated>1679870073725</updated>
       <workItem from="1679870075101" duration="676000" />
       <workItem from="1679876149933" duration="5077000" />
-      <workItem from="1679920645905" duration="11553000" />
+      <workItem from="1679920645905" duration="14388000" />
     </task>
     <task id="LOCAL-00001" summary="p">
       <created>1679937158913</created>
@@ -169,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679937534501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix">
+      <created>1679953398098</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679953398098</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rest">
+      <created>1679953413164</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679953413164</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +182,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="p" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="rest" />
+    <option name="LAST_COMMIT_MESSAGE" value="rest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
