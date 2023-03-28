@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const bookTerm = (props) =>{
     return(
         <tr>
@@ -11,7 +11,11 @@ const bookTerm = (props) =>{
                 <a title={"Delete"} className={"btn btn-danger"}
                    onClick={() => props.onDelete(props.term.id)}>Delete</a>
             </td>
-            <td className={"text-center"}>
+            <td className={"text-left"}>
+                <Link className={"btn btn-info"}
+                   onClick={() => props.onEdit(props.term.id)} to={`/books/edit/${props.term.id}`}>Edit</Link>
+            </td>
+            <td className={"text-left"}>
                 <a title={"Mark"} className={"btn btn-info"}
                    onClick={() => props.onMark(props.term.id)}>Mark As Taken</a>
             </td>

@@ -18,7 +18,7 @@ const books = (props) => {
                         <tbody>
                         {props.books.map((term)=>{
                             return(
-                              <BookTerm term={term} onDelete={props.onDelete} onMark={props.onMark}/>
+                              <BookTerm term={term} onDelete={props.onDelete} onMark={props.onMark} onEdit={props.onEdit}/>
                             );
                         })}
                         </tbody>

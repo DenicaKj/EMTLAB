@@ -8,6 +8,7 @@ import Authors from "../Authors/authors";
 import Categories from "../Categories/categories";
 import Header from "../Header/header";
 import BookAdd from "../Books/BookAdd/bookAdd";
+import BookEdit from "../Books/BookEdit/bookEdit";
 
 class App extends Component{
     constructor(props) {
@@ -15,7 +16,8 @@ class App extends Component{
         this.state = {
             books:[],
             authors:[],
-            categories:[]
+            categories:[],
+            selectedBook:{}
         }
     }
     render() {
@@ -26,8 +28,9 @@ class App extends Component{
                     <div className={"container"}>
 
                         <Routes>
+                            <Route path={"/books/edit/:id"} element={<BookEdit authors={this.state.authors} categories={this.state.categories} onEditBook={this.editBook} book={this.state.selectedBook}/>}/>
                             <Route path={"/books/add"} element={<BookAdd authors={this.state.authors} categories={this.state.categories} onAddBook={this.addBook}/>}/>
-                            <Route path={"/books"} element={<Books books={this.state.books} onDelete={this.deleteBook} onMark={this.markBook}/>}/>
+                            <Route path={"/books"} element={<Books books={this.state.books} onDelete={this.deleteBook} onMark={this.markBook} onEdit={this.getBook}/>}/>
                             <Route path={"/authors"} element={<Authors authors={this.state.authors}/>}/>
                             <Route path={"/categories"} element={<Categories categories={this.state.categories} />}/>
                             <Route path={"/"} element={<Books books={this.state.books}/>}/>
@@ -76,6 +79,20 @@ class App extends Component{
     }
     addBook = (name,category,author,availableCopies) =>{
         BookShopService.addBook(name,category,author,availableCopies)
+            .then(()=>{
+                this.loadBooks();
+            });
+    }
+    getBook = (id) =>{
+        BookShopService.getBook(id)
+            .then((data)=>{
+                this.setState({
+                    selectedBook:data.data
+                })
+            });
+    }
+    editBook = (id,name,category,author,availableCopies) =>{
+        BookShopService.editBook(id,name,category,author,availableCopies)
             .then(()=>{
                 this.loadBooks();
             });

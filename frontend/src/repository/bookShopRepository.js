@@ -21,8 +21,19 @@ const BookShopService={
             "availableCopies":availableCopies
         })
     },
+    editBook: (id,name,category,author,availableCopies) =>{
+        return axios.put(`/books/edit/${id}`,{
+            "name":name,
+            "category":category,
+            "author":author,
+            "availableCopies":availableCopies
+        })
+    },
     markBook: (id) =>{
         return axios.put(`/books/mark/${id}`);
+    },
+    getBook:(id)=>{
+        return axios.get(`/books/${id}`);
     }
 }
 
