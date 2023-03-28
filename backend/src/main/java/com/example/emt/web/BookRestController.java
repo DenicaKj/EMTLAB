@@ -30,7 +30,6 @@ public class BookRestController {
     }
     @GetMapping("/categories")
     private List<String> findAllCat() {
-
         return this.categoryService.categories();
     }
     @GetMapping("/{id}")

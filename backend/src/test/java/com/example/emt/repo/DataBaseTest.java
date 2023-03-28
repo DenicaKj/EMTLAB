@@ -28,9 +28,9 @@ public class DataBaseTest {
     private CategoryService categoryService;
     @Test
     public void createNewBook(){
-        Country country=countryService.save("Macedonia","Europe").get();
-        Author author=authorService.save("Војдан","Чернодрински",country.getId()).get();
-        bookService.save("Македноска Крвава Свадба","DRAMA",author.getId(),10);
+        //Country country=countryService.save("Macedonia","Europe").get();
+        //Author author=authorService.save("Војдан","Чернодрински",country.getId()).get();
+        bookService.save("Македноска Крвава Свадба","DRAMA",Long.valueOf(1),10);
         for (int i = 0; i < bookService.findAll().size(); i++) {
             System.out.println(bookService.findAll().get(i));
         }
@@ -43,5 +43,8 @@ public class DataBaseTest {
             System.out.println(cat.get(i));
         }
     }
-
+    @Test
+    public void MarkTest(){
+        bookService.mark(Long.valueOf(3));
+    }
 }

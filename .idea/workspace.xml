@@ -77,7 +77,7 @@
       <recent name="com.example.emt.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DataBaseTest.CategroyTest">
+  <component name="RunManager" selected="Spring Boot.EmtApplication">
     <configuration name="DataBaseTest.CategroyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EMT" />
       <extension name="coverage">
@@ -89,6 +89,22 @@
       <option name="PACKAGE_NAME" value="com.example.emt.repo" />
       <option name="MAIN_CLASS_NAME" value="com.example.emt.repo.DataBaseTest" />
       <option name="METHOD_NAME" value="CategroyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseTest.MarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EMT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.emt.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.emt.repo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.emt.repo.DataBaseTest" />
+      <option name="METHOD_NAME" value="MarkTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,8 +151,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DataBaseTest.CategroyTest" />
+        <item itemvalue="JUnit.DataBaseTest.MarkTest" />
         <item itemvalue="JUnit.DataBaseTest.createNewBook" />
+        <item itemvalue="JUnit.DataBaseTest.CategroyTest" />
         <item itemvalue="JUnit.DataBaseTest.createNewBook2" />
       </list>
     </recent_temporary>
@@ -151,7 +168,7 @@
       <updated>1679870073725</updated>
       <workItem from="1679870075101" duration="676000" />
       <workItem from="1679876149933" duration="5077000" />
-      <workItem from="1679920645905" duration="22281000" />
+      <workItem from="1679920645905" duration="28444000" />
     </task>
     <task id="LOCAL-00001" summary="p">
       <created>1679937158913</created>
@@ -226,6 +243,39 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/emt/model/DTO/BookDTO.java</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
+          <line>63</line>
+          <properties class="com.example.emt.web.BookRestController" method="mark">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
+          <line>56</line>
+          <properties class="com.example.emt.web.BookRestController" method="deleteById">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

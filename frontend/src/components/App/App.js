@@ -1,10 +1,13 @@
 import './App.css';
 import React, {Component} from "react";
-import Books from "../Books/books";
+import Books from "../Books/BookList/books";
 import BookShopService from "../../repository/bookShopRepository";
-import {BrowserRouter as Router, Redirect, Route} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {Navigate} from 'react-router-dom';
 import Authors from "../Authors/authors";
 import Categories from "../Categories/categories";
+import Header from "../Header/header";
+import BookAdd from "../Books/BookAdd/bookAdd";
 
 class App extends Component{
     constructor(props) {
@@ -18,11 +21,18 @@ class App extends Component{
     render() {
         return(
             <Router>
+                <Header/>
                 <main>
                     <div className={"container"}>
-                        <Route path={"/books"} exact render={() => <Books books={this.state.books}/>}></Route>
-                        <Route path={"/authors"} exact render={() => <Authors authors={this.state.authors}/>}></Route>
-                        <Route path={"/categories"} exact render={() => <Categories categories={this.state.books}/>}></Route>
+
+                        <Routes>
+                            <Route path={"/books/add"} element={<BookAdd authors={this.state.authors} categories={this.state.categories} onAddBook={this.addBook}/>}/>
+                            <Route path={"/books"} element={<Books books={this.state.books} onDelete={this.deleteBook} onMark={this.markBook}/>}/>
+                            <Route path={"/authors"} element={<Authors authors={this.state.authors}/>}/>
+                            <Route path={"/categories"} element={<Categories categories={this.state.categories} />}/>
+                            <Route path={"/"} element={<Books books={this.state.books}/>}/>
+                        </Routes>
+
                     </div>
                 </main>
             </Router>
@@ -36,8 +46,44 @@ class App extends Component{
                 })
             });
     }
+    loadAuthors = () =>{
+        BookShopService.fetchAuthors()
+            .then((data)=>{
+                this.setState({
+                    authors:data.data
+                })
+            });
+    }
+    loadCategories = () =>{
+        BookShopService.fetchCategories()
+            .then((data)=>{
+                this.setState({
+                    categories:data.data
+                })
+            });
+    }
+    deleteBook = (id) =>{
+        BookShopService.deleteBook(id)
+            .then(()=>{
+                this.loadBooks();
+            });
+    }
+    markBook = (id) =>{
+        BookShopService.markBook(id)
+            .then(()=>{
+                this.loadBooks();
+            });
+    }
+    addBook = (name,category,author,availableCopies) =>{
+        BookShopService.addBook(name,category,author,availableCopies)
+            .then(()=>{
+                this.loadBooks();
+            });
+    }
     componentDidMount() {
         this.loadBooks();
+        this.loadAuthors();
+        this.loadCategories();
     }
 
 }

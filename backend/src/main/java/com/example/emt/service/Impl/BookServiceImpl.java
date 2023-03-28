@@ -78,7 +78,9 @@ public class BookServiceImpl implements BookService {
           throw new NoAvailableCopies();
         }else {
             book.setAvailableCopies(book.getAvailableCopies() - 1);
+            bookRepository.save(book);
         }
+
     }
 
     @Override
