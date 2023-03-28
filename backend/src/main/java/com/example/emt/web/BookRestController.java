@@ -3,25 +3,35 @@ package com.example.emt.web;
 import com.example.emt.model.Book;
 import com.example.emt.model.DTO.BookDTO;
 import com.example.emt.service.BookService;
+import com.example.emt.service.CategoryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@CrossOrigin("http://localhost:3000")
-@RequestMapping("/api/books ")
+@CrossOrigin(origins = {"http://localhost:3000"})
+@RequestMapping("/api/books")
 public class BookRestController {
 
     private final BookService bookService;
+    private final CategoryService categoryService;
 
-    public BookRestController(BookService bookService) {
+    public BookRestController(BookService bookService, CategoryService categoryService) {
         this.bookService = bookService;
+        this.categoryService = categoryService;
     }
 
     @GetMapping
     private List<Book> findAll() {
+        List<Book> books=bookService.findAll();
+
         return this.bookService.findAll();
+    }
+    @GetMapping("/categories")
+    private List<String> findAllCat() {
+
+        return this.categoryService.categories();
     }
     @GetMapping("/{id}")
     public ResponseEntity<Book> findById(@PathVariable Long id) {

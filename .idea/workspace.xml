@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e85af91-b3ab-4ac3-8bba-c174586093fc" name="Changes" comment="react start">
-      <change afterPath="$PROJECT_DIR$/frontend/src/custom-axios/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/repository/bookShopRepository.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/App/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +16,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,6 +44,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2NZSNTcRXIblTgWHHFIx718Hxi1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -64,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +77,23 @@
       <recent name="com.example.emt.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EmtApplication">
+  <component name="RunManager" selected="JUnit.DataBaseTest.CategroyTest">
+    <configuration name="DataBaseTest.CategroyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EMT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.emt.repo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.emt.repo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.emt.repo.DataBaseTest" />
+      <option name="METHOD_NAME" value="CategroyTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DataBaseTest.createNewBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EMT" />
       <extension name="coverage">
@@ -117,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataBaseTest.CategroyTest" />
         <item itemvalue="JUnit.DataBaseTest.createNewBook" />
         <item itemvalue="JUnit.DataBaseTest.createNewBook2" />
       </list>
@@ -132,7 +151,7 @@
       <updated>1679870073725</updated>
       <workItem from="1679870075101" duration="676000" />
       <workItem from="1679876149933" duration="5077000" />
-      <workItem from="1679920645905" duration="16874000" />
+      <workItem from="1679920645905" duration="22281000" />
     </task>
     <task id="LOCAL-00001" summary="p">
       <created>1679937158913</created>

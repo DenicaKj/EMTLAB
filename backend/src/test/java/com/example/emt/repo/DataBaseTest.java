@@ -4,6 +4,7 @@ import com.example.emt.model.Author;
 import com.example.emt.model.Country;
 import com.example.emt.service.AuthorService;
 import com.example.emt.service.BookService;
+import com.example.emt.service.CategoryService;
 import com.example.emt.service.CountryService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,6 +12,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -21,6 +24,8 @@ public class DataBaseTest {
     private AuthorService authorService;
     @Autowired
     private CountryService countryService;
+    @Autowired
+    private CategoryService categoryService;
     @Test
     public void createNewBook(){
         Country country=countryService.save("Macedonia","Europe").get();
@@ -30,6 +35,13 @@ public class DataBaseTest {
             System.out.println(bookService.findAll().get(i));
         }
 
+    }
+    @Test
+    public void CategroyTest(){
+        List<String> cat=categoryService.categories();
+        for (int i = 0; i < cat.size(); i++) {
+            System.out.println(cat.get(i));
+        }
     }
 
 }
