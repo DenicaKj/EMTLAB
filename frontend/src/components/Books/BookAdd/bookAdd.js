@@ -13,7 +13,8 @@ const BookAdd = (props) =>{
       updateFormData({
           ...formData,
           [e.target.name]:e.target.value.trim()
-      })
+
+      });
     }
     const onFormSubmit = (e) => {
       e.preventDefault();
@@ -62,9 +63,10 @@ const BookAdd = (props) =>{
                     </div>
                     <div className="form-group">
                         <label>Author</label>
-                        <select name="authors" className="form-control" onChange={handleChange}>
+                        <select name="author" className="form-control" onChange={handleChange}>
                             {props.authors.map((term) =>
                                 <option value={term.id}>{term.name}</option>
+
                             )}
                         </select>
                     </div>

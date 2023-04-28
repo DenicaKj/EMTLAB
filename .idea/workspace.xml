@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1e85af91-b3ab-4ac3-8bba-c174586093fc" name="Changes" comment="react start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Books/BookAdd/bookAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Books/BookAdd/bookAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Books/BookList/books.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Books/BookList/books.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +172,16 @@
       <updated>1679870073725</updated>
       <workItem from="1679870075101" duration="676000" />
       <workItem from="1679876149933" duration="5077000" />
-      <workItem from="1679920645905" duration="28444000" />
+      <workItem from="1679920645905" duration="29813000" />
+      <workItem from="1680110923827" duration="615000" />
+      <workItem from="1680121556669" duration="1216000" />
+      <workItem from="1680180096542" duration="741000" />
+      <workItem from="1680181102198" duration="35000" />
+      <workItem from="1682547315857" duration="43000" />
+      <workItem from="1682547371405" duration="197000" />
+      <workItem from="1682548205535" duration="983000" />
+      <workItem from="1682597146960" duration="786000" />
+      <workItem from="1682617321392" duration="99000" />
     </task>
     <task id="LOCAL-00001" summary="p">
       <created>1679937158913</created>
@@ -243,39 +256,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/emt/model/DTO/BookDTO.java</url>
           <line>18</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
-          <line>63</line>
-          <properties class="com.example.emt.web.BookRestController" method="mark">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/emt/web/BookRestController.java</url>
-          <line>56</line>
-          <properties class="com.example.emt.web.BookRestController" method="deleteById">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
